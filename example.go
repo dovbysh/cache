@@ -1,7 +1,7 @@
-# cache
-A very simple cache implementation in Go using generics. 0 external dependencies. Based on github.com/akyoto/cache.
+package cache
 
-```go
+import "time"
+
 func ExampleCache() {
 	c := New[string, int]()
 
@@ -19,4 +19,3 @@ func ExampleCache() {
 		panic("expected expired item to not exist")
 	}
 }
-```
